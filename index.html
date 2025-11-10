@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>PORTFOLIO</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>A</span>LLEBY</a>
+     <div class="navbar"> 
+        <ul >
+            <li><a href="#maison">MAISON</a></li>
+            <li><a href="#apropos">A PROPOS</a></li>
+            <li><a href="#competence">COMPETENCES</a></li>
+            <li><a href="#projet">PROJET</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </div>
+       
+        <img src="img/icon/menu.svg" alt="menuhamburger" class="menuhamburger">
+    </header>
+    <section class="maison" id="maison">
+        <div class="content">
+            <h2>Salut et bienvenue sur mon portfolio !</h2>
+            <P>Moi c'est ALLEBY Benjamin Luis Miguel,étudiant en dévelopement d'application. <br> J'aime apprendre,créer et comprendre comment les choses fonctionnent <br> dans ce nouveau monde.</p>
+        </div>
+    </section>
+    <section class="apropos" id="apropos">
+        <div class="AP">
+          <h2><span>à</span> propos</h2>
+          <p>Etudiant en IDA(Informatique Developpeur d'Application) je découvre petit à petit le monde du dévelopement web,mobile et logiciel,en travaillant avec des langages comme C,JavaScript et d'autre technologies modernes.</p>
+          <p>Mon objectif est devenir un bon Developpeur capable de realiser des projets qui pourront faciliter le quotidien des PME,grandes boîtes et individus </p>
+          <img src="img/all.jpg" alt=" la personne">
+        </div>
+    </section>
+    <section class="competence" id="competence">
+        <div class="cp">
+            <h2><span>c</span>OMPETENCES</h2>
+              <div class="display">
+                <div class="image">
+                    <img src="img/icon/skill-icons--html.svg" alt="html">
+                    <div class="message">
+                         65%
+                    </div>
+                </div>
+            
+                <div class="image">
+                    <img src="img/icon/skill-icons--css.svg" alt="css">
+                    <div class="message">
+                         50%
+                    </div>
+                </div>
+    
+                <div class="image">
+                    <img src="img/icon/skill-icons--javascript.svg" alt="js">
+                    <div class="message">
+                         10%
+                    </div>
+                </div>
+            
+                <div class="image">
+                    <img src="img/icon/skill-icons--c.svg" alt="c">
+                    <div class="message">
+                         40%
+                    </div>
+                </div>
+            
+                <div class="image">
+                    <img src="img/icon/skill-icons--figma-dark.svg" alt="figma">
+                    <div class="message">
+                         55%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projet" id="projet">
+
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contacts">
+               <h2><span>c</span>ontact</h2>
+        </div>
+        <div class="text">
+            <h3>Discutons ensemble ! </h3>
+            <p>
+                Chaque échange et Chaque projet sont pour moi une chance d'apprendre et de développer mes competences.
+            </p>
+        </div>
+        <div class="formulaire">
+            <label for="nom">votre nom</label>
+            <input type="text" name="nom" id="nom" placeholder="nom" required>
+
+            <label for="gmail">votre gmail</label>
+            <input type="email" name="mail" id="gmail" placeholder="gmail" required>
+
+            <label for="message">message</label>
+            <textarea name="message" id="message" placeholder="Message" ></textarea>
+             <input type="submit" value="ENVOYER" class="button">
+        </div>
+        <div class="contactme">
+             <div>
+              <img src="img/icon/logos--whatsapp-icon.svg" alt="logos--whatsapp-icon" class="whatsapp">+225 0554950164
+             </div>
+             <div>
+                 <img src="img/icon/ic--baseline-local-phone.svg" alt="phone">+225 0554950164/0140101634
+             </div>
+             <div>
+               <img src="img/icon/gmail.svg" alt="gmail" class="whatsapp">allebybenjaminmiguel@gmail.com 
+             </div>
+        </div>
+    </section>
+    <footer>@copyright 2025</footer>
+</body>
+<script>
+    const menuhamburger = document.querySelector(".menuhamburger")
+    const navlink = document.querySelector(".navbar")
+    menuhamburger.addEventListener('click',()=>{
+        navlink.classList.toggle('mobile-menu')
+    })
+</script>
+</html>
