@@ -129,8 +129,19 @@
 <script>
     const menuhamburger = document.querySelector(".menuhamburger")
     const navlink = document.querySelector(".navbar")
+    const bodyEl = document.body;
+
     menuhamburger.addEventListener('click',()=>{
         navlink.classList.toggle('mobile-menu')
+        bodyEl.classList.toggle('menu-open')
+    })
+
+    // Ferme le menu quand on clique sur un lien (utile en mobile)
+    document.querySelectorAll('.navbar a').forEach(link => {
+        link.addEventListener('click', () => {
+            navlink.classList.remove('mobile-menu')
+            bodyEl.classList.remove('menu-open')
+        })
     })
 </script>
 </html>
