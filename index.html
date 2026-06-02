@@ -4,160 +4,313 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>PORTFOLIO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <title>ALLEBY — Portfolio</title>
 </head>
 <body>
-    <header>
-        <a href="#" class="logo"><span>A</span>LLEBY</a>
-     <div class="navbar"> 
-        <ul >
-            <li><a href="#maison">MAISON</a></li>
-            <li><a href="#apropos">A PROPOS</a></li>
-            <li><a href="#competence">COMPETENCES</a></li>
-            <li><a href="#projet">PROJET</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ul>
-    </div>
-       
-        <img src="img/icon/menu.svg" alt="menuhamburger" class="menuhamburger">
+
+    <!-- HEADER -->
+    <header id="header">
+        <a href="#maison" class="logo"><span>A</span>LLEBY</a>
+        <div class="navbar">
+            <ul>
+                <li><a href="#maison">Maison</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#competence">Compétences</a></li>
+                <li><a href="#projet">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <img src="img/icon/menu.svg" alt="menu" class="menuhamburger">
+        <div class="menu-overlay"></div>
     </header>
+
+    <!-- HERO -->
     <section class="maison" id="maison">
+        <div class="hero-bg"></div>
         <div class="content">
-            <h2>Bienvenue sur mon portfolio !</h2>
-            <P>
-                HELLO ! Je m’appelle ALLEBY Benjamin Luis Miguel, étudiant en développement d’applications.
-               Passionné par l’informatique et les nouvelles technologies, j’aime explorer et apprendre chaque jour dans les domaines du développement web, mobile et logiciel.
-               Mon objectif : devenir un développeur complet, capable de créer des solutions modernes et efficaces.
+            <p class="hero-tag">👋 Étudiant en développement d'applications</p>
+            <h1>ALLEBY<br><span>Benjamin</span></h1>
+            <p class="hero-desc">
+                Passionné par l'informatique et les nouvelles technologies,
+                j'explore chaque jour le développement web, mobile et logiciel.
+                Mon objectif : créer des solutions modernes et efficaces.
             </p>
-                 
+            <div class="hero-cta">
+                <a href="#projet" class="btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn-secondary">Me contacter</a>
+                <a href="cv/mon-cv.pdf" download class="btn-cv" id="btn-cv-hero">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Télécharger mon CV
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
+
+    <!-- À PROPOS -->
     <section class="apropos" id="apropos">
+        <div class="section-label">01 — À propos</div>
         <div class="AP">
-          <h2><span>à</span> propos</h2>
-          <p>
-               Je suis un étudiant motivé, curieux et passionné par la programmation.
-               J’aime apprendre de nouvelles technologies et relever des défis techniques.
-               Chaque projet que je réalise est une occasion d’apprendre, d’expérimenter et de progresser vers mon objectif : devenir un développeur compétent et créatif.
-          </p>
-          <img src="img/portfolio_alleby.png" alt=" la personne">
+            <div class="ap-text">
+                <h2>Qui suis-<span>je</span> ?</h2>
+                <p>
+                    Je suis un étudiant motivé, curieux et passionné par la programmation.
+                    J'aime apprendre de nouvelles technologies et relever des défis techniques.
+                </p>
+                <p>
+                    Chaque projet que je réalise est une occasion d'apprendre, d'expérimenter
+                    et de progresser vers mon objectif : devenir un développeur compétent et créatif.
+                </p>
+                <div class="ap-stats">
+                    <div class="stat">
+                        <strong>1+</strong>
+                        <span>Projet réel</span>
+                    </div>
+                    <div class="stat">
+                        <strong>7+</strong>
+                        <span>Technologies</span>
+                    </div>
+                    <div class="stat">
+                        <strong>100%</strong>
+                        <span>Motivation</span>
+                    </div>
+                </div>
+                <a href="cv/mon-cv.pdf" download class="btn-cv-apropos" id="btn-cv-apropos">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Télécharger mon CV
+                </a>
+            </div>
+            <div class="ap-img-wrapper">
+                <img src="img/portfolio_alleby.png" alt="ALLEBY Benjamin">
+                <div class="ap-img-deco"></div>
+            </div>
         </div>
     </section>
+
+    <!-- COMPÉTENCES -->
     <section class="competence" id="competence">
+        <div class="section-label">02 — Compétences</div>
         <div class="cp">
-            <h2><span>c</span>OMPETENCES</h2>
-              <div class="display">
-                <div class="image">
-                    <img src="img/icon/skill-icons--html.svg" alt="html">
-                    <div class="message">
-                         Bon niveau
+            <h2>Mes <span>compétences</span></h2>
+            <p class="section-sub">Survolez une icône pour voir mon niveau</p>
+
+            <div class="skills-categories">
+
+                <div class="skills-group">
+                    <h4>Développement Web</h4>
+                    <div class="display">
+                        <div class="image">
+                            <img src="img/icon/skill-icons--html.svg" alt="HTML">
+                            <p class="skill-name">HTML</p>
+                            <div class="message">Bon niveau</div>
+                        </div>
+                        <div class="image">
+                            <img src="img/icon/skill-icons--css.svg" alt="CSS">
+                            <p class="skill-name">CSS</p>
+                            <div class="message">Niveau intermédiaire</div>
+                        </div>
+                        <div class="image">
+                            <img src="img/icon/skill-icons--javascript.svg" alt="JavaScript">
+                            <p class="skill-name">JavaScript</p>
+                            <div class="message">Débutant</div>
+                        </div>
+                        <div class="image">
+                            <img src="img/icon/icon-icons.svg" alt="PHP">
+                            <p class="skill-name">PHP</p>
+                            <div class="message">Débutant</div>
+                        </div>
                     </div>
                 </div>
-            
-                <div class="image">
-                    <img src="img/icon/skill-icons--css.svg" alt="css">
-                    <div class="message">
-                         Niveau intermédiaire
+
+                <div class="skills-group">
+                    <h4>Programmation & Design</h4>
+                    <div class="display">
+                        <div class="image">
+                            <img src="img/icon/skill-icons--c.svg" alt="C">
+                            <p class="skill-name">Langage C</p>
+                            <div class="message">Bases algorithmique & structures de données</div>
+                        </div>
+                        <div class="image">
+                            <img src="img/icon/python_logo_icon_168886.svg" alt="Python">
+                            <p class="skill-name">Python</p>
+                            <div class="message">Débutant</div>
+                        </div>
+                        <div class="image">
+                            <img src="img/icon/skill-icons--figma-dark.svg" alt="Figma">
+                            <p class="skill-name">Figma</p>
+                            <div class="message">Niveau intermédiaire</div>
+                        </div>
                     </div>
                 </div>
-    
-                <div class="image">
-                    <img src="img/icon/skill-icons--javascript.svg" alt="js">
-                    <div class="message">
-                         Débutant
+
+                <div class="skills-group">
+                    <h4>Intelligence Artificielle</h4>
+                    <div class="display">
+                        <div class="image">
+                            <img src="img/logo_Claude.png" alt="Claude AI" class="ai-logo">
+                            <p class="skill-name">Claude AI</p>
+                            <div class="message">Utilisation avancée (prompting, projets, code)</div>
+                        </div>
+                        <div class="image">
+                            <img src="img/chatgpt.jpg" alt="ChatGPT" class="ai-logo">
+                            <p class="skill-name">ChatGPT</p>
+                            <div class="message">Utilisation avancée (rédaction, analyse, code)</div>
+                        </div>
                     </div>
                 </div>
-            
-                <div class="image">
-                    <img src="img/icon/skill-icons--c.svg" alt="c">
-                    <div class="message">
-                         Connaissances de base en algorithmique et en structures de données
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="projet" id="projet">
+        <div class="section-label">03 — Projets</div>
+        <div class="contacts">
+            <h2>Mes <span>projets</span></h2>
+        </div>
+
+        <div class="projets-grid">
+            <div class="projet-card">
+                <div class="projet-screenshot">
+                    <img src="img/projet_gestion_heures.jpg" alt="Aperçu Gestion des Heures Enseignants">
+                </div>
+                <div class="projet-header">
+                    <div class="projet-icon">🏫</div>
+                    <div class="projet-badges">
+                        <span class="badge badge-php">PHP</span>
+                        <span class="badge badge-mysql">MySQL</span>
+                        <span class="badge badge-html">HTML/CSS</span>
                     </div>
                 </div>
-            
-                <div class="image">
-                    <img src="img/icon/skill-icons--figma-dark.svg" alt="figma">
-                    <div class="message">
-                         Niveau intermédiaire
-                    </div>
-                </div>
-                 <div class="image">
-                    <img src="img/icon/icon-icons.svg" alt="php">
-                    <div class="message">
-                         Débutant
-                    </div>
-                </div>
-                 <div class="image">
-                    <img src="img/icon/python_logo_icon_168886.svg" alt="python">
-                    <div class="message">
-                         Débutant
-                    </div>
+                <h3>Gestion des Heures Enseignants</h3>
+                <p class="projet-client">Groupe Loko , Côte d'Ivoire</p>
+                <p class="projet-desc">
+                    Application web complète permettant de suivre et gérer les heures effectuées
+                    par les enseignants au sein du Groupe Loko. Le système couvre
+                    l'authentification sécurisée, la saisie des heures par matière et par classe,
+                    ainsi que la génération de rapports.
+                </p>
+                <ul class="projet-features">
+                    <li>✅ Gestion des enseignants, matières et classes</li>
+                    <li>✅ Saisie et suivi des heures effectuées</li>
+                    <li>✅ Base de données MySQL (modélisation MCD/MLD/MPD)</li>
+                    <li>✅ Interface responsive et moderne</li>
+                </ul>
+                <div class="projet-footer">
+                    <span class="projet-type">🌐 Application Web</span>
                 </div>
             </div>
         </div>
     </section>
-    <section class="projet" id="projet">
-        <div class="contacts">
-             <h2><span>p</span>rojet</h2>
-        </div>
-       
 
-    </section>
-
+    <!-- CONTACT -->
     <section class="contact" id="contact">
+        <div class="section-label">04 — Contact</div>
         <div class="contacts">
-               <h2><span>c</span>ontact</h2>
+            <h2>Travaillons <span>ensemble</span></h2>
         </div>
         <div class="text">
-            <h3>contactez-moi! </h3>
-            <p>
-                Je suis ouvert à toute collaboration, stage,ou projet de développement.
-            </p>
+            <p>Je suis ouvert à toute collaboration, stage ou projet de développement.</p>
         </div>
-        <div class="formulaire">
-            <form action="#" method="post">
-                <label for="nom">votre nom</label>
-                <input type="text" name="nom" id="nom" placeholder="nom" required>
 
-                <label for="gmail">votre gmail</label>
-                <input type="email" name="mail" id="gmail" placeholder="gmail" required>
+        <div class="contact-layout">
+            <div class="formulaire">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="nom">Votre nom</label>
+                        <input type="text" name="nom" id="nom" placeholder="Ex : Benjamin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gmail">Votre email</label>
+                        <input type="email" name="mail" id="gmail" placeholder="exemple@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Décrivez votre projet ou votre demande..."></textarea>
+                    </div>
+                    <input type="submit" value="Envoyer le message →" class="button">
+                </form>
+            </div>
 
-                <label for="message">message</label>
-                <textarea name="message" id="message" placeholder="Message" ></textarea>
-                <input type="submit" value="ENVOYER" class="button">
-             </form>
-        </div>
-        <div class="contactme">
-             <div>
-             <a href="https://wa.me/2250554950164" target="_blank"><img src="img/icon/logos--whatsapp-icon.svg" alt="logos--whatsapp-icon" class="whatsapp"></a> 
-             </div>
-                 <div>
-                     <a href="tel:+2250554950164" target="_blank"><img src="img/icon/ic--baseline-local-phone.svg" alt="phone"></a>
-                 </div>
-             <div>
-               <a href="mailto:allebybenjaminmiguel@gmail.com " target="_blank"><img src="img/icon/gmail.svg" alt="gmail" class="whatsapp"></a>
-             </div>
+            <div class="contact-info">
+                <p class="contact-info-title">Retrouvez-moi aussi sur</p>
+                <div class="contactme">
+                    <a href="https://wa.me/2250554950164" target="_blank" class="contact-link">
+                        <img src="img/icon/logos--whatsapp-icon.svg" alt="WhatsApp">
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="tel:+2250554950164" target="_blank" class="contact-link">
+                        <img src="img/icon/ic--baseline-local-phone.svg" alt="Téléphone">
+                        <span>Téléphone</span>
+                    </a>
+                    <a href="mailto:allebybenjaminmiguel@gmail.com" target="_blank" class="contact-link">
+                        <img src="img/icon/gmail.svg" alt="Gmail">
+                        <span>Gmail</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
-        <h3 class="mot"> ENSEMBLE NOUS BATIRONS UN AVENIR MEILLEUR</h3>
-    <footer>@copyright 2025</footer>
-</body>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <a href="#maison" class="logo footer-logo"><span>A</span>LLEBY</a>
+            <p class="footer-quote">« Ensemble nous bâtirons un avenir meilleur »</p>
+            <p class="footer-copy">© 2025 ALLEBY Benjamin Luis Miguel. Tous droits réservés.</p>
+        </div>
+    </footer>
+
 <script>
-    const menuhamburger = document.querySelector(".menuhamburger")
-    const navlink = document.querySelector(".navbar")
+    // Menu hamburger
+    const menuhamburger = document.querySelector(".menuhamburger");
+    const navlink = document.querySelector(".navbar");
+    const overlay = document.querySelector(".menu-overlay");
     const bodyEl = document.body;
 
-    menuhamburger.addEventListener('click',()=>{
-        navlink.classList.toggle('mobile-menu')
-        bodyEl.classList.toggle('menu-open')
-    })
+    function toggleMenu() {
+        navlink.classList.toggle('mobile-menu');
+        bodyEl.classList.toggle('menu-open');
+    }
 
-    // Ferme le menu quand on clique sur un lien (utile en mobile)
+    menuhamburger.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
+
     document.querySelectorAll('.navbar a').forEach(link => {
         link.addEventListener('click', () => {
-            navlink.classList.remove('mobile-menu')
-            bodyEl.classList.remove('menu-open')
-        })
-    })
+            navlink.classList.remove('mobile-menu');
+            bodyEl.classList.remove('menu-open');
+        });
+    });
+
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // Animations au scroll (Intersection Observer)
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section, .projet-card, .stat, .image, .skills-group').forEach(el => {
+        el.classList.add('fade-in');
+        observer.observe(el);
+    });
 </script>
+</body>
 </html>
