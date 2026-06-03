@@ -26,7 +26,7 @@ html {
 }
 
 body {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Almendra', serif;
     color: var(--dark);
     background: var(--white);
     overflow-x: hidden;
@@ -66,7 +66,7 @@ header.scrolled {
 }
 
 .logo {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Monoton', cursive;
     font-size: 1.6rem;
     font-weight: 800;
     color: var(--dark);
@@ -191,7 +191,7 @@ body.menu-open { overflow: hidden; }
 }
 
 .maison .content h1 {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Monoton', cursive;
     font-size: clamp(3rem, 8vw, 6rem);
     font-weight: 800;
     color: var(--white);
@@ -343,7 +343,7 @@ body.menu-open { overflow: hidden; }
 .ap-text { flex: 1; }
 
 .ap-text h2 {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Monoton', cursive;
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 800;
     margin-bottom: 24px;
@@ -370,9 +370,9 @@ body.menu-open { overflow: hidden; }
 }
 
 .stat strong {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Almendra', serif;
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--green);
     line-height: 1;
 }
@@ -420,7 +420,7 @@ body.menu-open { overflow: hidden; }
 }
 
 .cp h2 {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Monoton', cursive;
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 800;
     margin-bottom: 8px;
@@ -578,7 +578,7 @@ body.menu-open { overflow: hidden; }
 }
 
 .contacts h2 {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Monoton', cursive;
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 800;
     letter-spacing: -1px;
@@ -678,9 +678,9 @@ body.menu-open { overflow: hidden; }
 .badge-html { background: #fce8e3; color: #c44324; }
 
 .projet-card h3 {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Almendra', serif;
     font-size: 1.25rem;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--dark);
     margin-bottom: 6px;
 }
@@ -771,7 +771,7 @@ body.menu-open { overflow: hidden; }
     border-radius: 12px;
     border: 1.5px solid var(--border);
     font-size: 0.95rem;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Almendra', serif;
     color: var(--dark);
     background: var(--white);
     transition: border-color var(--transition), box-shadow var(--transition);
@@ -799,7 +799,7 @@ body.menu-open { overflow: hidden; }
     border-radius: 12px;
     font-size: 0.95rem;
     font-weight: 700;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Almendra', serif;
     cursor: pointer;
     transition: var(--transition);
     box-shadow: 0 4px 16px rgba(8,206,74,0.35);
@@ -944,3 +944,89 @@ footer {
     .image { width: 90px; }
     .image img, .ai-icon { width: 60px; height: 60px; }
 }
+
+/* ===== BOUTON THEME ===== */
+.theme-toggle {
+    background: var(--light);
+    border: 1.5px solid var(--border);
+    border-radius: 50px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+    background: var(--green);
+    border-color: var(--green);
+    transform: rotate(20deg) scale(1.1);
+}
+
+/* ===== DARK MODE ===== */
+body.dark-mode {
+    --white: #0e0f11;
+    --light: #1a1c20;
+    --dark: #f1f1f1;
+    --dark2: #e0e0e0;
+    --gray: #9ca3af;
+    --border: #2e3035;
+}
+
+body.dark-mode header.scrolled {
+    background: rgba(14,15,17,0.92);
+}
+
+body.dark-mode .logo { color: #f1f1f1; }
+
+body.dark-mode .navbar ul li a { color: var(--gray); }
+body.dark-mode .navbar ul li a:hover { color: #f1f1f1; }
+
+body.dark-mode .theme-toggle {
+    background: #2e3035;
+    border-color: #3a3d44;
+    color: #f1f1f1;
+}
+
+body.dark-mode .navbar {
+    background: #1a1c20;
+}
+
+body.dark-mode .logo-git,
+body.dark-mode .logo-github {
+    background: #2e3035;
+    border-color: #3a3d44;
+}
+
+body.dark-mode .projet-card {
+    background: #1a1c20;
+}
+
+body.dark-mode .formulaire input,
+body.dark-mode .formulaire textarea {
+    background: #1a1c20;
+    color: #f1f1f1;
+    border-color: #2e3035;
+}
+
+body.dark-mode .formulaire input::placeholder,
+body.dark-mode .formulaire textarea::placeholder {
+    color: #555;
+}
+
+body.dark-mode .contact-link {
+    background: #1a1c20;
+    color: #f1f1f1;
+}
+
+body.dark-mode footer {
+    background: #07080a;
+}
+
+body.dark-mode .badge-php { background: #2a2b3d; color: #9a9fcf; }
+body.dark-mode .badge-mysql { background: #0e2a2e; color: #4ab8cc; }
+body.dark-mode .badge-html { background: #2e1a16; color: #e07060; }

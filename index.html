@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Monoton&display=swap" rel="stylesheet">
     <title>ALLEBY — Portfolio</title>
 </head>
 <body>
@@ -21,6 +21,9 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+        <button class="theme-toggle" id="themeToggle" title="Changer le thème">
+            <span class="theme-icon">🌙</span>
+        </button>
         <img src="img/icon/menu.svg" alt="menu" class="menuhamburger">
         <div class="menu-overlay"></div>
     </header>
@@ -30,7 +33,7 @@
         <div class="hero-bg"></div>
         <div class="content">
             <p class="hero-tag">👋 Étudiant en développement d'applications</p>
-            <h1>ALLEBY<br><span>Benjamin</span></h1>
+            <h1>Alleby<br><span>Benjamin</span></h1>
             <p class="hero-desc">
                 Passionné par l'informatique et les nouvelles technologies,
                 j'explore chaque jour le développement web, mobile et logiciel.
@@ -53,7 +56,7 @@
 
     <!-- À PROPOS -->
     <section class="apropos" id="apropos">
-        <div class="section-label">01 — À propos</div>
+        <div class="section-label">À propos</div>
         <div class="AP">
             <div class="ap-text">
                 <h2>Qui suis-<span>je</span> ?</h2>
@@ -93,7 +96,7 @@
 
     <!-- COMPÉTENCES -->
     <section class="competence" id="competence">
-        <div class="section-label">02 — Compétences</div>
+        <div class="section-label">Compétences</div>
         <div class="cp">
             <h2>Mes <span>compétences</span></h2>
             <p class="section-sub">Survolez une icône pour voir mon niveau</p>
@@ -179,7 +182,7 @@
 
     <!-- PROJETS -->
     <section class="projet" id="projet">
-        <div class="section-label">03 — Projets</div>
+        <div class="section-label">Projets</div>
         <div class="contacts">
             <h2>Mes <span>projets</span></h2>
         </div>
@@ -220,7 +223,7 @@
 
     <!-- CONTACT -->
     <section class="contact" id="contact">
-        <div class="section-label">04 — Contact</div>
+        <div class="section-label">Contact</div>
         <div class="contacts">
             <h2>Travaillons <span>ensemble</span></h2>
         </div>
@@ -272,7 +275,7 @@
         <div class="footer-inner">
             <a href="#maison" class="logo footer-logo"><span>A</span>LLEBY</a>
             <p class="footer-quote">« Ensemble nous bâtirons un avenir meilleur »</p>
-            <p class="footer-copy">© 2025 ALLEBY Benjamin Luis Miguel. Tous droits réservés.</p>
+            <p class="footer-copy">© 2026 ALLEBY Benjamin Luis Miguel. Tous droits réservés.</p>
         </div>
     </footer>
 
@@ -308,7 +311,24 @@
         }
     });
 
-    // Animations au scroll (Intersection Observer)
+    // Dark / Light mode toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = themeToggle.querySelector('.theme-icon');
+
+    // Mémoriser le choix
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        themeIcon.textContent = '☀️';
+    }
+
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        themeIcon.textContent = isDark ? '☀️' : '🌙';
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
